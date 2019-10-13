@@ -1,0 +1,306 @@
+figure, body {
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a { text-decoration: none; color: white; }
+a:link { text-decoration: none; color: white; }
+a:visited { text-decoration: none; color: white; }
+a:hover { text-decoration: none; color: white; text-decoration: underline; }
+a:active { text-decoration: none; color: white; }
+
+img#header-img {
+	height: 65px;
+	width: 230;
+	margin-top: 4px;
+	margin-left: 50px;
+}
+
+a.nav-link {
+	height: 30px;
+	width: 100px;
+	margin-top: 4px;
+	padding-right:50px;
+}
+
+a.nav-link:nth-child(3) { padding-right:80px; } 
+
+body {
+	background: LightGray;
+	display: flex;
+	flex-direction: column;
+}
+
+nav#nav-bar {
+	position: fixed; 
+	top: 0;
+	width: 100%;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+a#inflection {
+	margin-left: auto;
+}
+
+/* header */
+header {
+	padding-top: 7%;
+	height: 100vh;
+	background: url("../img/header-background.jpg") fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+	color: white;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1.5fr;
+	justify-items: center;
+	align-items: start;	
+	margin-top: 20px;
+}
+
+article.feature {
+	width: 80%
+}
+
+article.feature:nth-last-child(-n+2) { padding-top: 10%; }
+
+h2 {
+	text-align: center;
+}
+
+article.feature p {
+	font-family: 'Montserrat', sans-serif;
+	text-align: justify;
+	font-size: 1.05em;
+	border-left: 1mm ridge rgb(170, 50, 220, .6);
+	padding-left: 15px;
+}
+
+article.feature h2:before, article.feature h2:after {
+    content: "";
+    height: 1px;
+    /* I've removed the vendor prefixes, if you are looking to support older browsers
+       then refer to older documentation.
+    */
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(147,147,147,1) 50%,rgba(0,0,0,0) 100%);
+    display: block;
+
+}
+
+/* How it works section */
+section#how-works {
+	background-image: linear-gradient(-90deg, #FF9308, #bc1b1b);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 400px;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+}
+
+iframe.vid-iframe {
+	padding-left: 20px;
+	width: 560px;
+	height: 315px;
+	align-self: center; 
+	border-radius: 4px;
+}
+
+form#form {
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+form h2 {
+	margin: 0px;
+	font-size: 5em;
+	color: white;
+}
+
+input[type="email"] {
+	width: 80%;
+	height: 50px;
+	border:2px solid rgba(255,255,255);
+	border-radius:.25em;
+    background:transparent;
+    transition:all .100s;
+	color:rgba(255,255,255,.5);
+	font-size: 1.5em;
+	padding-left: 10px;
+}
+
+input[type="submit"] {
+	background: transparent;
+	border:2px solid rgba(255,255,255);
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	transition:all .3s;
+	background-color: white;
+	color: #FF9308;
+}
+
+/* Pricing section */
+section#pricing {
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+article.products {
+	text-align: center;
+	width: 300px;
+	margin: 30px 0 30px 0;
+}
+
+article.products:before, article.products:after {
+    content: "";
+    height: 1px;
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(147,147,147,1) 50%,rgba(0,0,0,0) 100%);
+    display: block;
+}
+
+article.products h2 {
+	margin-bottom: 0;
+	color: orange;
+	font-weight: bold;
+}
+
+article.products strong {
+	font-size: 1.5em;
+}
+
+article.products button {
+	background: transparent;
+	border:2px solid black;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+article.products button:hover {
+	transition:all .3s;
+	color: orange;
+	border-color: orange;
+}
+
+/* footer */
+footer {
+	background-color: #271e1e;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer div#terms-links {
+	margin: 20px 0 20px 0;
+	width: 269px;
+	display: flex;
+	justify-content: space-around;
+}
+
+footer p {
+	font-family: 'Montserrat', sans-serif;
+	font-size:11px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+footer div#terms-links a {
+	
+}
+
+@media (max-width: 685px) {
+	
+	/* Mavbar */
+	nav#nav-bar {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	img#header-img {
+		margin-top: 4px;
+		margin-left: 0;
+	}
+	
+	a.nav-link {
+		height: 30px;
+		width: 100px;
+		margin-top: 4px;
+		padding-right: 0;
+		text-align: center;
+	}
+	
+	a#inflection {
+		margin-left: 0;
+	}
+	
+	a.nav-link:nth-child(3) { padding-right: 0; } 
+
+	/* header */
+	header {
+		height: auto;
+		padding-top: 170px;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		justify-items: center;
+		align-items: start;	
+		margin-top: 20px;
+		padding-bottom: -160px;
+	}
+	
+	article.feature {
+		width: 80%
+	}
+	
+	article.feature:nth-last-child(-n+2) { padding-top: 0; }
+	
+	/* how it works section */
+	section#how-works {
+		flex-direction: column;
+		justify-content: space-around;
+		height: auto;
+	}
+	
+	input[type="submit"] {
+		margin-bottom: 20px;
+	}
+	
+	/* pricing section */
+	section#pricing {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	
+}
